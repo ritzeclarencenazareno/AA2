@@ -1,0 +1,118 @@
+.main {
+	margin-left:5%;
+	margin-right:5%;
+	text-align:justify;
+	color:#ffffff;
+	}
+	
+.main-div{	
+	width: 820px;
+	height: 460px;
+
+	}
+.border-div {
+	margin-left: 30%;
+	
+	position: relative;
+	width: 820px;
+	height: 460px;
+	text-align: center;
+	position: relative;
+	background: url(../images/1.jpg);
+	background-size: 820px 460px;
+	background-repeat: no-repeat;
+         
+	 }		
+
+.border-div::before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 0;
+	height: 0;
+	background: transparent;
+	border: 2px solid transparent;
+	animation: animate 3s linear infinite;
+	}		
+
+@keyframes animate {
+	0% {
+		width: 0;
+		height: 0;
+		border-top-color: white;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		}
+
+	50% {
+		width: 100%;
+		height: 0;
+		border-top-color: white;
+		border-right-color: white;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		}
+
+	100% {
+		width: 100%;
+		height: 100%;
+		border-top-color: white;
+		border-right-color: white;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		}
+	}
+
+.border-div::after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 0;
+	height: 0;
+	background: transparent;
+	border: 2px solid transparent;
+	animation: animates 3s linear infinite;
+}	
+
+@keyframes animates {
+	0% {
+		width: 0;
+		height: 0;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: white;
+	}
+
+	50% {
+		width: 0;
+		height: 100%;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: white;
+		border-left-color: white;
+	}
+
+	100% {
+		width: 100%;
+		height: 100%;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: white;
+		border-left-color: white;
+	}
+}
+
+.source{
+	text-align: center;
+	color: #ffffff;
+}
+
+.cons{
+	text-align: justify;
+	color: #ffffff;
+	margin: 0% 5%;
+}
